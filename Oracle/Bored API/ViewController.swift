@@ -33,8 +33,9 @@ class ViewController: UIViewController {
     func update(){
         OperationQueue.main.addOperation() {
             self.activityIndicator.startAnimating()
-            self.infoLabel.text = self.info?.profile?.activity
+            self.infoLabel.text = self.info?.activity
         }
+        
     }
     
     @IBAction func touchesBegan(_ sender: Any) {
@@ -43,11 +44,11 @@ class ViewController: UIViewController {
     
     func loadRequest() {
         
-        boredHelper.fetchAction(for: boredHelper.fmpURL){ result in
+        boredHelper.fetchAction(){ result in
             
             switch result {
-            case let .Success(bo):
-                self.info = bo
+            case let .Success(bored):
+                self.info = bored
                 self.update()
             case let .Failure(error):
                 self.info = Bored()

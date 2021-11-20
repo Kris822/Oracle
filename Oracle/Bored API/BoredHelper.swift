@@ -19,7 +19,7 @@ class BoredHelper {
     private func getAction(from data: Data) -> BoredHelperResult {
         do {
             let decoder = JSONDecoder()
-            print("Spencerion" + )
+            //print(decoder)
             let bored = try decoder.decode(Bored.self, from: data)
             return .Success(bored)
         } catch let error {
@@ -27,7 +27,7 @@ class BoredHelper {
         }
     }
     
-    func fetchAction(for symbol: String, completion: @escaping (BoredHelperResult) -> Void) {
+    func fetchAction( completion: @escaping (BoredHelperResult) -> Void) {
         
         if let url = URL(string: fmpURL) {
             

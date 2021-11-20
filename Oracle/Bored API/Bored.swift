@@ -19,23 +19,23 @@ struct Profile: Decodable {
 
 class Bored: Decodable {
 
-    enum CodingKeys: String, CodingKey {
+    enum CodingKeys: CodingKey {
         //case symbol
-        case profile
-        case failure
+        case activity
+
     }
     
     //var symbol: String?
-    var profile: Profile?
+    var activity: String?
     
     init() {
         //symbol = "???"
-        profile = nil
+        activity = ""
     }
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         //symbol = try container.decode(String.self, forKey: .symbol)
-        profile = try container.decode(Profile.self, forKey: .profile)
+        activity = try container.decode(String.self, forKey: .activity)
     }
 }
