@@ -32,13 +32,14 @@ class ViewController: UIViewController {
     
     func update(){
         OperationQueue.main.addOperation() {
-            self.activityIndicator.startAnimating()
             self.infoLabel.text = self.info?.activity
+            self.activityIndicator.stopAnimating()
         }
         
     }
     
     @IBAction func touchesBegan(_ sender: Any) {
+        self.activityIndicator.startAnimating()
         loadRequest()
     }
     
@@ -49,7 +50,7 @@ class ViewController: UIViewController {
             switch result {
             case let .Success(bored):
                 self.info = bored
-                self.update()
+                //self.update()
             case let .Failure(error):
                 self.info = Bored()
                
