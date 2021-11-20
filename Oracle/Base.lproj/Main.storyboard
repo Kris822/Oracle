@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Oracle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qF-Hf-MYP">
+                                <rect key="frame" x="186" y="215" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAG-DB-OvF">
+                                <rect key="frame" x="143" y="776" width="128" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Ask the Oracle">
+                                    <color key="titleColor" systemColor="systemIndigoColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchesBegan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zhg-fv-B1G"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ofR-yd-1dr">
+                                <rect key="frame" x="157" y="246" width="100" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="kNS-0X-ttz"/>
+                                </constraints>
+                                <color key="color" systemColor="systemOrangeColor"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you bored? How about you ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxs-n7-9mf">
+                                <rect key="frame" x="80.5" y="94" width="253" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XAG-DB-OvF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="B44-Zp-zy7"/>
+                            <constraint firstItem="ofR-yd-1dr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JDe-zQ-yA1"/>
+                            <constraint firstItem="9qF-Hf-MYP" firstAttribute="top" secondItem="Dxs-n7-9mf" secondAttribute="bottom" constant="100" id="LJw-iD-jPO"/>
+                            <constraint firstItem="9qF-Hf-MYP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MaE-iC-rTb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XAG-DB-OvF" secondAttribute="bottom" constant="50" id="NEr-kc-ec6"/>
+                            <constraint firstItem="Dxs-n7-9mf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="o3D-WO-VKh"/>
+                            <constraint firstItem="ofR-yd-1dr" firstAttribute="top" secondItem="9qF-Hf-MYP" secondAttribute="bottom" constant="10" id="pkV-oZ-ToU"/>
+                            <constraint firstItem="Dxs-n7-9mf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yJL-yQ-8Se"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="OracleButton" destination="XAG-DB-OvF" id="E7A-bk-S9j"/>
+                        <outlet property="activityIndicator" destination="ofR-yd-1dr" id="wL9-S1-ocU"/>
+                        <outlet property="appTitle" destination="Dxs-n7-9mf" id="6lW-2b-YvI"/>
+                        <outlet property="infoLabel" destination="9qF-Hf-MYP" id="Wdd-HX-cnN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

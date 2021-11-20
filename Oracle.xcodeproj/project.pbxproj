@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A499EC592749951400DCF3A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A499EC582749951400DCF3A9 /* AppDelegate.swift */; };
+		A499EC5B2749951400DCF3A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A499EC5A2749951400DCF3A9 /* SceneDelegate.swift */; };
+		A499EC5D2749951400DCF3A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A499EC5C2749951400DCF3A9 /* ViewController.swift */; };
+		A499EC602749951400DCF3A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A499EC5E2749951400DCF3A9 /* Main.storyboard */; };
+		A499EC622749951600DCF3A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A499EC612749951600DCF3A9 /* Assets.xcassets */; };
+		A499EC652749951600DCF3A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A499EC632749951600DCF3A9 /* LaunchScreen.storyboard */; };
+		A499EC6E2749961E00DCF3A9 /* BoredHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A499EC6D2749961E00DCF3A9 /* BoredHelper.swift */; };
+		A499EC70274997D000DCF3A9 /* Bored.swift in Sources */ = {isa = PBXBuildFile; fileRef = A499EC6F274997D000DCF3A9 /* Bored.swift */; };
+		A499EC7227499A1400DCF3A9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A499EC7127499A1400DCF3A9 /* Utils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A499EC552749951400DCF3A9 /* Oracle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oracle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A499EC582749951400DCF3A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A499EC5A2749951400DCF3A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A499EC5C2749951400DCF3A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A499EC5F2749951400DCF3A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A499EC612749951600DCF3A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A499EC642749951600DCF3A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A499EC662749951600DCF3A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A499EC6D2749961E00DCF3A9 /* BoredHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredHelper.swift; sourceTree = "<group>"; };
+		A499EC6F274997D000DCF3A9 /* Bored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bored.swift; sourceTree = "<group>"; };
+		A499EC7127499A1400DCF3A9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A499EC522749951400DCF3A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A499EC4C2749951400DCF3A9 = {
+			isa = PBXGroup;
+			children = (
+				A499EC572749951400DCF3A9 /* Oracle */,
+				A499EC562749951400DCF3A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A499EC562749951400DCF3A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A499EC552749951400DCF3A9 /* Oracle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A499EC572749951400DCF3A9 /* Oracle */ = {
+			isa = PBXGroup;
+			children = (
+				A499EC7127499A1400DCF3A9 /* Utils.swift */,
+				A499EC6C274995BF00DCF3A9 /* Bored API */,
+				A499EC582749951400DCF3A9 /* AppDelegate.swift */,
+				A499EC5A2749951400DCF3A9 /* SceneDelegate.swift */,
+				A499EC5E2749951400DCF3A9 /* Main.storyboard */,
+				A499EC612749951600DCF3A9 /* Assets.xcassets */,
+				A499EC632749951600DCF3A9 /* LaunchScreen.storyboard */,
+				A499EC662749951600DCF3A9 /* Info.plist */,
+			);
+			path = Oracle;
+			sourceTree = "<group>";
+		};
+		A499EC6C274995BF00DCF3A9 /* Bored API */ = {
+			isa = PBXGroup;
+			children = (
+				A499EC6D2749961E00DCF3A9 /* BoredHelper.swift */,
+				A499EC6F274997D000DCF3A9 /* Bored.swift */,
+				A499EC5C2749951400DCF3A9 /* ViewController.swift */,
+			);
+			path = "Bored API";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A499EC542749951400DCF3A9 /* Oracle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A499EC692749951600DCF3A9 /* Build configuration list for PBXNativeTarget "Oracle" */;
+			buildPhases = (
+				A499EC512749951400DCF3A9 /* Sources */,
+				A499EC522749951400DCF3A9 /* Frameworks */,
+				A499EC532749951400DCF3A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Oracle;
+			productName = Oracle;
+			productReference = A499EC552749951400DCF3A9 /* Oracle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A499EC4D2749951400DCF3A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A499EC542749951400DCF3A9 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = A499EC502749951400DCF3A9 /* Build configuration list for PBXProject "Oracle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A499EC4C2749951400DCF3A9;
+			productRefGroup = A499EC562749951400DCF3A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A499EC542749951400DCF3A9 /* Oracle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A499EC532749951400DCF3A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A499EC652749951600DCF3A9 /* LaunchScreen.storyboard in Resources */,
+				A499EC622749951600DCF3A9 /* Assets.xcassets in Resources */,
+				A499EC602749951400DCF3A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A499EC512749951400DCF3A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A499EC6E2749961E00DCF3A9 /* BoredHelper.swift in Sources */,
+				A499EC5D2749951400DCF3A9 /* ViewController.swift in Sources */,
+				A499EC70274997D000DCF3A9 /* Bored.swift in Sources */,
+				A499EC592749951400DCF3A9 /* AppDelegate.swift in Sources */,
+				A499EC5B2749951400DCF3A9 /* SceneDelegate.swift in Sources */,
+				A499EC7227499A1400DCF3A9 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A499EC5E2749951400DCF3A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A499EC5F2749951400DCF3A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A499EC632749951600DCF3A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A499EC642749951600DCF3A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A499EC672749951600DCF3A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A499EC682749951600DCF3A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A499EC6A2749951600DCF3A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Oracle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clee.Oracle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A499EC6B2749951600DCF3A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Oracle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clee.Oracle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A499EC502749951400DCF3A9 /* Build configuration list for PBXProject "Oracle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A499EC672749951600DCF3A9 /* Debug */,
+				A499EC682749951600DCF3A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A499EC692749951600DCF3A9 /* Build configuration list for PBXNativeTarget "Oracle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A499EC6A2749951600DCF3A9 /* Debug */,
+				A499EC6B2749951600DCF3A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A499EC4D2749951400DCF3A9 /* Project object */;
+}
